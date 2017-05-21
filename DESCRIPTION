@@ -2,16 +2,31 @@ Package: resamplr
 Type: Package
 Title: Resampling methods
 Version: 0.0.1
-Authors@R: c(person("Jeffrey", "Arnold", role = c("aut", "cre"),
-                    email = "jeffrey.arnold@gmail.com"),
-             person("Hadley", "Wickham", role = "ctb",
-                    comment = "Some code extracted from the modelr package"),
-             person("Angelo", "Canty", role = "ctb",
-                    comment = "Some code extracted from the boot package"),
-             person("Brian", "Ripley", role = "ctb",
-                    comment = "Some code extracted from the boot package"),
-             person("Achim", "Zeileis", role = "ctb",
-                    comment = "Some code extracted from rollapply in the zoo package"))
+Authors@R: 
+    c(person(given = "Jeffrey",
+             family = "Arnold",
+             role = "aut",
+             email = "jeffrey.arnold@gmail.com"),
+      person(given = "William",
+             family = "Dearden",
+             role = "cre",
+             email = "wdearden208@gmail.com"),
+      person(given = "Hadley",
+             family = "Wickham",
+             role = "ctb",
+             comment = "Some code extracted from the modelr package"),
+      person(given = "Angelo",
+             family = "Canty",
+             role = "ctb",
+             comment = "Some code extracted from the boot package"),
+      person(given = "Brian",
+             family = "Ripley",
+             role = "ctb",
+             comment = "Some code extracted from the boot package"),
+      person(given = "Achim",
+             family = "Zeileis",
+             role = "ctb",
+             comment = "Some code extracted from rollapply in the zoo package"))
 Description: Additional resampling methods for the 'resampler' class in the 'modelr' package.
   Resampling and similar methods implemented include: bootstrap methods (simple bootstrap,
   weighted bootstrap, balanced bootstrap, moving-blocks bootstrap),
