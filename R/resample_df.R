@@ -16,6 +16,12 @@ resample_df <- function(data, ...) {
 
 #' @describeIn resample_df Generate subsamples of rows of data frames.
 #' @export
+resample_df.resample <- function(res, samples, ...) {
+  resample_df(res$data, res$idx[samples])
+}
+
+#' @describeIn resample_df Generate subsamples of rows of data frames.
+#' @export
 resample_df.data.frame <- function(data, samples, ...) {
   if (is.integer(samples)) samples <- list(samples)
   assert_that(is.list(samples) && all(map_lgl(samples, is.integer)))
