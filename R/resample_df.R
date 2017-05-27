@@ -14,6 +14,12 @@ resample_df <- function(data, ...) {
   UseMethod("resample_df")
 }
 
+#' @describeIn resample_df Generate subsamples of rows of "resample" objects.
+#' @export
+resample_df.resample <- function(res, samples, ...) {
+  resample_df(res$data, res$idx[samples])
+}
+
 #' @describeIn resample_df Generate subsamples of rows of data frames.
 #' @export
 resample_df.data.frame <- function(data, samples, ...) {

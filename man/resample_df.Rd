@@ -2,11 +2,14 @@
 % Please edit documentation in R/resample_df.R
 \name{resample_df}
 \alias{resample_df}
+\alias{resample_df.resample}
 \alias{resample_df.data.frame}
 \alias{resample_df.grouped_df}
 \title{Generate subsamples from indices}
 \usage{
 resample_df(data, ...)
+
+\method{resample_df}{resample}(res, samples, ...)
 
 \method{resample_df}{data.frame}(data, samples, ...)
 
@@ -33,6 +36,8 @@ subsample.
 }
 \section{Methods (by class)}{
 \itemize{
+\item \code{resample}: Generate subsamples of rows of "resample" objects.
+
 \item \code{data.frame}: Generate subsamples of rows of data frames.
 
 \item \code{grouped_df}: Generate subsamples of groups of grouped data frames.
